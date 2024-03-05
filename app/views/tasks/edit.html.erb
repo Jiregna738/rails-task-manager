@@ -1,0 +1,12 @@
+<h1> Edit an existing task </h1>
+
+<%= form_with model: @task do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <%= f.submit :Edit %>
+<% end %>
+
+
+<%= link_to "Go Back", tasks_path %>
